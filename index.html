@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <h2>🎵 Music Player</h2>
+
+        <ul>
+            <li><a href="pages/home.html"><i class="fas fa-home"></i> Home</a></li>
+
+            <li><a href="pages/playlist.html"><i class="fas fa-list"></i> Playlist</a></li>
+
+            <li><a href="pages/albums.html"><i class="fas fa-compact-disc"></i> Albums</a></li>
+
+            <li><a href="pages/songs.html"><i class="fas fa-music"></i> Songs</a></li>
+
+            <li><a href="pages/about.html"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <h1>Now Playing</h1>
+
+        <div class="player-card">
+
+            <!-- album cover -->
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Divide_cover.png" alt="Album Cover"
+                class="album-cover">
+
+            <!-- song name and artist -->
+            <h2>Divide</h2>
+            <p>Ed Sheeran</p>
+
+            <!-- audio progress -->
+            <div class="progress-section">
+                <span>0:00</span>
+
+                <input type="range" min="0" max="100" value="25">
+
+                <span>3:45</span>
+            </div>
+
+            <!-- controls -->
+            <div class="controls">
+
+                <button>
+                    <i class="fas fa-backward"></i>
+                </button>
+
+                <button class="play-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+
+                <button>
+                    <i class="fas fa-forward"></i>
+                </button>
+
+            </div>
+
+            <!-- volume -->
+            <div class="volume-section">
+
+                <i class="fas fa-volume-up"></i>
+
+                <input type="range" min="0" max="100" value="70">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
